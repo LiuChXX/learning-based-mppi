@@ -36,7 +36,7 @@ class CartpoleRunner:
         self.pole_angle_coef = self.all_args.pole_angle_coef
         self.pole_angle_velocity_coef = self.all_args.pole_angle_velocity_coef
 
-        self.if_use_gpu_rollout = self.all_args.use_gpu_accelerate_rollout
+        self.if_use_gpu_rollout = self.all_args.use_gpu_planner
 
         self.model_save_path = self.all_args.model_save_path
         self.model_load_path = config['model_load_path']
@@ -106,6 +106,7 @@ class CartpoleRunner:
     def evaluate(self):
         """evaluation"""
         self.net.dynamics_network.load_state_dict(torch.load(self.model_load_path))
+        print("load model from {}".format(self.model_load_path))
 
         for episode in range(self.evaluate_num):
             coef = [self.cart_position_coef, self.pole_angle_coef, self.cart_velocity_coef, self.pole_angle_velocity_coef]
