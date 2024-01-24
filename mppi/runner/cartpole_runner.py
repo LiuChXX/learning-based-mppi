@@ -62,7 +62,7 @@ class CartpoleRunner:
         """sample the transition data in the environment using for training the dynamic network"""
         for episode in range(500):
             observation, info = self.env.reset()  # reset the environment
-            print("sampling in process, episode = {} in {}".format(episode+1, 500))
+            print("collecting data, episode = {} in {}".format(episode+1, 500))
             for timestep in range(200):
                 old_obs = observation
                 action = self.env.action_space.sample()  # random actions
