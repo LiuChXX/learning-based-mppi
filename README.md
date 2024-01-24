@@ -1,7 +1,7 @@
 # learning-based-mppi
 This repo provides a hand-made Python implementation of the learning-based model predictive path integral (MPPI) algorithm introduced in [Information Theoretic MPC for Model-Based Reinforcement Learning](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7989202). A dynamic network is developed to approximate the system dynamics and is incorporated into the MPPI online planner. For the MPPI planner, **two implementation versions** are provided: 
-* A conventional version that accurately reflects the algorithm but involves longer computational time (achieved as function `plan` in `./algorithm/MPPI/mppi_planner.py`).
-* A GPU-accelerated version that accelerate rollout through parallel computation, which is recommended (achieved as function `plan_gpu` in `./algorithm/MPPI/mppi_planner.py`).
+* A conventional version that accurately reflects the algorithm but involves longer computational time (see function `plan` in `./algorithm/MPPI/mppi_planner.py`).
+* A GPU-accelerated version that accelerate rollout through parallel computation, which is recommended (see function `plan_gpu` in `./algorithm/MPPI/mppi_planner.py`).
 
 The flexible and easily configurable code framework facilitates easy setup and further improvement. The algorithm is trained and evaluated on a cart-pole swing up task [Gymnasium task Cart-Pole-v1](https://gymnasium.farama.org/environments/classic_control/cart_pole/).
 
