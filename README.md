@@ -18,7 +18,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ### Gymnasium
 ``` Bash
 # install gymnasium
-pip install numpy gymnasium[classic-control]
+pip install gymnasium[classic-control]
 ```
 For other information about Gymnasium, please refer to [https://github.com/Farama-Foundation/Gymnasium](https://github.com/Farama-Foundation/Gymnasium).
 
