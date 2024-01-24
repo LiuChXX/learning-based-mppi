@@ -27,7 +27,7 @@ When your environemnt is ready, you can directly run with command:
 ``` Bash
 python main.py
 ```
-By default, this will cover three processes: **data collection**, **network training** and **evaluation** on the cart-pole swing up task. The trained model will be saved in the "results" folder. For a quick evaluation without training, please setup the `model_load_path` in `main.py` and use command:
+By default, this will cover three processes: **data collection**, **network training** and **evaluation** on the cart-pole swing up task. After training, the trained model will be saved in the "results" folder. For a quick evaluation without training, please setup the `model_load_path` in `main.py` with the path of the model to be evaluated and use command:
 ``` Bash
 python main.py --if_train
 ```
