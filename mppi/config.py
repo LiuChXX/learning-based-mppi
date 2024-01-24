@@ -30,9 +30,6 @@ def get_config():
     parser.add_argument("--pole_angle_velocity_coef", type=int, default=15,
                         help="coefficient parameter for cost calculation")
 
-    parser.add_argument("--use_gpu_accelerate_rollout", action='store_false', default=True,
-                        help="by default, use gpu to accelerate mppi rollout")
-
     parser.add_argument("--model_save_path", type=str,
                         default=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'results'),
                         help="set the path to save trained model")
