@@ -110,7 +110,7 @@ class CartpoleRunner:
         if self.if_use_gpu_rollout:
             print("use_gpu_planner")
         else:
-            action = planner.plan(state)
+            print("no use_gpu_planner")
 
         for episode in range(self.evaluate_num):
             coef = [self.cart_position_coef, self.pole_angle_coef, self.cart_velocity_coef, self.pole_angle_velocity_coef]
