@@ -32,7 +32,7 @@ By default, this will cover three processes: **data collection**, **network trai
 For other parameters, please see in `config.py`.
 
 ## Evaluation Performance
-Here we present GIFs below to show an evaluation result on Gymnasium task Cart-Pole-v1.
+Here we present GIF below to show an evaluation result on Gymnasium task Cart-Pole-v1.
 |<img src="cartpole_gif.gif" align="middle" width="300" border="1"/>|
 |:-------------------------: |
 |Evaluation Result|  
